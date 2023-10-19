@@ -460,8 +460,23 @@ const nodes = [
   {
     id: "G",
     type: "output",
-    position: { x: -25, y: 300 },
+    position: { x: -40, y: 280 },
     data: { label: "Internet / MPLS Cloud" },
+    style: {
+      width: 200,
+      backgroundColor: "#19cbb1",
+      border: "1px solid #19cbb1",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+  },
+  //   Internet / MPLS Cloud 1
+  {
+    id: "G_1",
+    type: "output",
+    position: { x: 0, y: 320 },
+    data: { label: "Internet / MPLS Cloud 1" },
     style: {
       width: 200,
       backgroundColor: "#19cbb1",

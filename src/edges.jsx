@@ -62,6 +62,14 @@ export default [
   //   Blue Container 3
   { id: "C_3-1-C_3-2", source: "C_3-1", target: "C_3-2" },
 
-  // Sw to Internet/MPLS Cloud
-  { id: "E-1F1", source: "E", target: "F" },
+  // Blue Container to Internet/MPLS Cloud
+  { id: "C_1-1-G", source: "C_1-1", target: "G" },
+  { id: "C_2-1-G", source: "C_2-1", target: "G" },
+  { id: "C_3-1-G", source: "C_3-1", target: "G" },
+
+  // Blue Container to Internet/MPLS Cloud 1
+  { id: "C_1-1-G_1", source: "C_1-1", target: "G_1" },
+  { id: "C_2-1-G_1", source: "C_2-1", target: "G_1" },
+  { id: "C_3-1-G_1", source: "C_3-1", target: "G_1" },
+
 ];
