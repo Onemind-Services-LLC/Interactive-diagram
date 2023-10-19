@@ -14,6 +14,14 @@ const rfStyle = {
   backgroundColor: "#dfdfdf",
 };
 
+import CustomEdgeStartEnd from "./component/CustomEdgeStartEnd";
+import CustomEdgeStartEnd1 from "./component/CustomEdgeStartEnd1";
+
+const edgeTypes = {
+  "start-end": CustomEdgeStartEnd,
+  "start-end1": CustomEdgeStartEnd1,
+};
+
 function Flow() {
   const [nodes, setNodes] = useState(initialNodes);
   const [edges, setEdges] = useState(initialEdges);
@@ -32,10 +40,12 @@ function Flow() {
   );
 
   return (
-    <div style={{
-      width: '100%',
-      height: "100vh"
-    }}>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+      }}
+    >
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -44,6 +54,7 @@ function Flow() {
         onConnect={onConnect}
         fitView
         style={rfStyle}
+        edgeTypes={edgeTypes}
         attributionPosition="top-right"
       >
         <Background />
