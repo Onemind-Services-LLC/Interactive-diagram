@@ -136,6 +136,22 @@ const nodes = [
       backgroundColor: "#fff",
     },
   },
+  {
+    id: "B-1",
+    data: null,
+    position: { x: 60, y: 15 },
+    parentNode: "B",
+    extent: "parent",
+    // draggable: false,
+    style: {
+      width: 1,
+      padding: 0,
+      //   height: 50,
+      backgroundColor: "transparent",
+    },
+    sourcePosition: "right",
+    targetPosition: "right",
+  },
 
   //   Pink Container 2
   {
@@ -199,13 +215,28 @@ const nodes = [
       backgroundColor: "#fff",
     },
   },
+  {
+    id: "B_1-1",
+    data: null,
+    position: { x: -3, y: 17 },
+    parentNode: "B_1",
+    extent: "parent",
+    // draggable: false,
+    style: {
+      width: 1,
+      padding: 0,
+      backgroundColor: "transparent",
+    },
+    sourcePosition: "left",
+    targetPosition: "left",
+  },
 
   //   Blue Container 1
   {
     id: "C_1",
     type: "output",
     position: { x: -200, y: 400 },
-    data: { label: "Dummy Container 1" },
+    data: null,
     style: {
       width: 150,
       height: 200,
@@ -227,6 +258,26 @@ const nodes = [
     style: {
       width: 70,
     },
+    sourcePosition: "top",
+    targetPosition: "top",
+  },
+  {
+    id: "C_1-1-1",
+    data: null,
+    position: { x: 23, y: 17 },
+    parentNode: "C_1-1",
+    extent: "parent",
+    // draggable: false,
+    style: {
+      width: 1,
+      height: 1,
+      backgroundColor: "transparent",
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+    },
+    sourcePosition: "bottom",
+    targetPosition: "bottom",
   },
   {
     id: "C_1-2",
@@ -239,12 +290,29 @@ const nodes = [
       width: 70,
     },
   },
+  {
+    id: "C_1-3",
+    data: { label: "SITE 11" },
+    position: { x: 95, y: 173 },
+    parentNode: "C_1",
+    extent: "parent",
+    draggable: false,
+    style: {
+      width: 60,
+      backgroundColor: "#3498db",
+      color: "#fff",
+      padding: "2px 5px",
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+    },
+  },
   //   Blue Container 2
   {
     id: "C_2",
     type: "output",
     position: { x: 0, y: 400 },
-    data: { label: "Dummy Container 2" },
+    data: null,
     style: {
       width: 150,
       height: 200,
@@ -266,6 +334,26 @@ const nodes = [
     style: {
       width: 70,
     },
+    sourcePosition: "top",
+    targetPosition: "top",
+  },
+  {
+    id: "C_2-1-1",
+    data: null,
+    position: { x: 23, y: 17 },
+    parentNode: "C_2-1",
+    extent: "parent",
+    // draggable: false,
+    style: {
+      width: 1,
+      height: 1,
+      backgroundColor: "transparent",
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+    },
+    sourcePosition: "bottom",
+    targetPosition: "bottom",
   },
   {
     id: "C_2-2",
@@ -278,12 +366,29 @@ const nodes = [
       width: 70,
     },
   },
+  {
+    id: "C_2-3",
+    data: { label: "SITE 13" },
+    position: { x: 95, y: 170 },
+    parentNode: "C_2",
+    extent: "parent",
+    draggable: false,
+    style: {
+      width: 60,
+      backgroundColor: "#3498db",
+      color: "#fff",
+      padding: "2px 5px",
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+    },
+  },
   //   Blue Container 3
   {
     id: "C_3",
     type: "output",
     position: { x: 200, y: 400 },
-    data: { label: "Dummy Container 3" },
+    data: null,
     style: {
       width: 150,
       height: 200,
@@ -305,6 +410,26 @@ const nodes = [
     style: {
       width: 70,
     },
+    sourcePosition: "top",
+    targetPosition: "top",
+  },
+  {
+    id: "C_3-1-1",
+    data: null,
+    position: { x: 23, y: 17 },
+    parentNode: "C_3-1",
+    extent: "parent",
+    // draggable: false,
+    style: {
+      width: 1,
+      height: 1,
+      backgroundColor: "transparent",
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+    },
+    sourcePosition: "bottom",
+    targetPosition: "bottom",
   },
   {
     id: "C_3-2",
@@ -317,7 +442,23 @@ const nodes = [
       width: 70,
     },
   },
-
+  {
+    id: "C_3-3",
+    data: { label: "SITE 12" },
+    position: { x: 95, y: 170 },
+    parentNode: "C_3",
+    extent: "parent",
+    draggable: false,
+    style: {
+      width: 60,
+      backgroundColor: "#3498db",
+      color: "#fff",
+      padding: "2px 5px",
+      border: "none",
+      outline: "none",
+      boxShadow: "none",
+    },
+  },
   //   Black Container
   {
     id: "D",
@@ -472,6 +613,22 @@ const nodes = [
     sourcePosition: "bottom",
     targetPosition: "left",
   },
+  {
+    id: "E-1",
+    data: null,
+    position: { x: 30, y: 35 },
+    parentNode: "E",
+    extent: "parent",
+    // draggable: false,
+    style: {
+      width: 1,
+      padding: 0,
+      //   height: 50,
+      backgroundColor: "transparent",
+    },
+    sourcePosition: "bottom",
+    targetPosition: "bottom",
+  },
   //   Cloud Version Container
   {
     id: "F_1",
@@ -507,8 +664,9 @@ const nodes = [
   {
     id: "G_1",
     type: "output",
-    position: { x: 0, y: 320 },
-    data: { label: "Internet / MPLS Cloud 1" },
+    // position: { x: 0, y: 320 },
+    position: { x: -40, y: 280 },
+    data: { label: "Internet / MPLS Cloud" },
     style: {
       width: 200,
       backgroundColor: "#19cbb1",
