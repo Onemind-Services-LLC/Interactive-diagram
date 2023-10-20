@@ -62,14 +62,57 @@ export default [
   //   Blue Container 3
   { id: "C_3-1-C_3-2", source: "C_3-1", target: "C_3-2" },
 
-  // Blue Container to Internet/MPLS Cloud
+  // Blue Container 1 to Internet/MPLS Cloud
   { id: "C_1-1-G", source: "C_1-1", target: "G" },
+
+  // Blue Container 2 to Internet/MPLS Cloud
   { id: "C_2-1-G", source: "C_2-1", target: "G" },
+
+  // Blue Container 3 to Internet/MPLS Cloud
   { id: "C_3-1-G", source: "C_3-1", target: "G" },
 
-  // Blue Container to Internet/MPLS Cloud 1
+  // Blue Container 1 to Internet/MPLS Cloud 1
   { id: "C_1-1-G_1", source: "C_1-1", target: "G_1" },
+
+  // Blue Container 2 to Internet/MPLS Cloud 1
   { id: "C_2-1-G_1", source: "C_2-1", target: "G_1" },
+
+  // Blue Container 3 to Internet/MPLS Cloud 1
   { id: "C_3-1-G_1", source: "C_3-1", target: "G_1" },
 
+  // SW to vBond-1
+  { id: "D-3-D-2-1", source: "D-3", target: "D-2-1" },
+
+  // SW to vBond-2
+  { id: "D-3-D-2-2", source: "D-3", target: "D-2-2" },
+
+  // SW to CA
+  { id: "D-3-E", source: "D-3", target: "E" },
+
+  // SW to Internet / MPLS Cloud
+  { id: "D-3-G", source: "D-3", target: "G" },
+
+  // SW to Internet / MPLS Cloud 1
+  { id: "D-3-G_1", source: "D-3", target: "G_1" },
+
+  // SW to vManage 1
+  { id: "D-3-D-1-1", source: "D-3", target: "D-1-1" },
+
+  // SW to vManage 2
+  { id: "D-3-D-1-2", source: "D-3", target: "D-1-2" },
+
+  // SW to vManage 3
+  { id: "D-3-D-1-3", source: "D-3", target: "D-1-3" },
+
+  // vManage 0 to vManage 1
+  { id: "D-1-0-D-1-1", source: "D-1-0", target: "D-1-1" },
+
+  // vManage 0 to vManage 2
+  { id: "D-1-0-D-1-2", source: "D-1-0", target: "D-1-2" },
+
+  // vManage 0 to vManage 3
+  { id: "D-1-0-D-1-3", source: "D-1-0", target: "D-1-3" },
+
+  // CA to Physical LAN
+  { id: "F_1-E", source: "F_1", target: "E" },
 ];

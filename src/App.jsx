@@ -4,6 +4,7 @@ import ReactFlow, {
   applyEdgeChanges,
   applyNodeChanges,
   Background,
+  Controls
 } from "reactflow";
 import "reactflow/dist/style.css";
 
@@ -16,10 +17,15 @@ const rfStyle = {
 
 import CustomEdgeStartEnd from "./component/CustomEdgeStartEnd";
 import CustomEdgeStartEnd1 from "./component/CustomEdgeStartEnd1";
+import ResourceContainer from "./component/ResourceContainer";
 
 const edgeTypes = {
   "start-end": CustomEdgeStartEnd,
   "start-end1": CustomEdgeStartEnd1,
+};
+
+const nodeTypes = {
+  "resource-container": ResourceContainer,
 };
 
 function Flow() {
@@ -55,9 +61,11 @@ function Flow() {
         fitView
         style={rfStyle}
         edgeTypes={edgeTypes}
+        nodeTypes={nodeTypes}
         attributionPosition="top-right"
       >
         <Background />
+        <Controls />
       </ReactFlow>
     </div>
   );
