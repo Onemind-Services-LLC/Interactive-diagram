@@ -1,28 +1,6 @@
 import React, { FC } from "react";
 import { getBezierPath, EdgeLabelRenderer, BaseEdge } from "reactflow";
 
-function EdgeLabel({ transform, label }) {
-  return (
-    <div
-      style={{
-        position: "absolute",
-        // background: "transparent",
-        padding: "3px 4px",
-        borderRadius: "4px",
-        border: "1px solid #318bb6",
-        color: "#318bb6",
-        background: "#fff",
-        fontSize: 8,
-        fontWeight: 700,
-        transform,
-      }}
-      className="nodrag nopan"
-    >
-      {label}
-    </div>
-  );
-}
-
 const CustomEdge = ({
   id,
   sourceX,
@@ -41,22 +19,51 @@ const CustomEdge = ({
     targetY,
     targetPosition,
   });
+  const startLabelX = labelX - (labelX - sourceX) * 0.73;
+  const startLabelY = labelY - (labelY - sourceY) * 0.73;
+
+  const endLabelX = labelX - (labelX - targetX) * 0.55;
+  const endLabelY = labelY - (labelY - targetY) * 0.55;
 
   return (
     <>
       <BaseEdge id={id} path={edgePath} style={{ stroke: "#318bb6" }} />
       <EdgeLabelRenderer>
         {data.startLabel && (
-          <EdgeLabel
-            transform={`translate(-50%, 0%) translate(${sourceX}px,${sourceY}px)`}
-            label={data.startLabel}
-          />
+          <div
+            style={{
+              position: "absolute",
+              transform: `translate(-50%, -50%) translate(${startLabelX}px, ${startLabelY}px)`,
+              padding: "1px 2px",
+              fontSize: 10,
+              borderRadius: "4px",
+              fontWeight: 700,
+              border: "1px solid #318bb6",
+              color: "#318bb6",
+              background: "#fff",
+            }}
+            className="nodrag nopan"
+          >
+            {data.startLabel}
+          </div>
         )}
         {data.endLabel && (
-          <EdgeLabel
-            transform={`translate(-50%, -100%) translate(${targetX}px,${targetY}px)`}
-            label={data.endLabel}
-          />
+          <div
+            style={{
+              position: "absolute",
+              transform: `translate(-50%, -50%) translate(${endLabelX}px, ${endLabelY}px)`,
+              padding: "1px 2px",
+              fontSize: 10,
+              borderRadius: "4px",
+              fontWeight: 700,
+              border: "1px solid #318bb6",
+              color: "#318bb6",
+              background: "#fff",
+            }}
+            className="nodrag nopan"
+          >
+            {data.endLabel}
+          </div>
         )}
       </EdgeLabelRenderer>
     </>

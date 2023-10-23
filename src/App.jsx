@@ -20,6 +20,8 @@ import CustomEdgeStartEnd1 from "./component/CustomEdgeStartEnd1";
 import CustomEdgeStartEnd2 from "./component/CustomEdgeStartEnd2";
 import CustomEdgeStartEnd3 from "./component/CustomEdgeStartEnd3";
 import CustomEdgeStartEnd4 from "./component/CustomEdgeStartEnd4";
+import CustomEdgeStartEnd5 from "./component/CustomEdgeStartEnd5";
+import CustomEdgeStartEnd6 from "./component/CustomEdgeStartEnd6";
 
 import ResourceContainer from "./component/ResourceContainer";
 
@@ -29,6 +31,8 @@ const edgeTypes = {
   "start-end2": CustomEdgeStartEnd2,
   "start-end3": CustomEdgeStartEnd3,
   "start-end4": CustomEdgeStartEnd4,
+  "start-end5": CustomEdgeStartEnd5,
+  "start-end6": CustomEdgeStartEnd6,
 };
 
 const nodeTypes = {

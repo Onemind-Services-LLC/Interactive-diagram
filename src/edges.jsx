@@ -1,26 +1,31 @@
 export default [
-  //   { id: "a1-a2", source: "A-1", target: "A-2" },
-  //   { id: "a2-b", source: "A-2", target: "B" },
-  //   { id: "a2-c", source: "A-2", target: "C" },
-  //   { id: "b1-b2", source: "B-1", target: "B-2" },
-  //   { id: "b1-b3", source: "B-1", target: "B-3" },
-
   //   Pink Container 1
+  // {
+  //   id: "A1-E",
+  //   source: "A-1",
+  //   target: "B",
+  //   data: {
+  //     startLabel: "eth0",
+  //     endLabel: "e0/0",
+  //     centerLabel: ".7",
+  //   },
+  //   type: "start-end",
+  // },
+  // {
+  //   id: "A2-E",
+  //   source: "A-2",
+  //   target: "B",
+  //   data: {
+  //     startLabel: "eth0",
+  //     endLabel: "e0/1",
+  //     centerLabel: ".6",
+  //   },
+  //   type: "start-end",
+  // },
   {
-    id: "A1-E",
-    source: "A-1",
-    target: "B",
-    data: {
-      startLabel: "eth0",
-      endLabel: "e0/0",
-      centerLabel: ".7",
-    },
-    type: "start-end",
-  },
-  {
-    id: "A2-E",
+    id: "A-2-B-2",
     source: "A-2",
-    target: "B",
+    target: "B-2",
     data: {
       startLabel: "eth0",
       endLabel: "e0/1",
@@ -28,12 +33,45 @@ export default [
     },
     type: "start-end",
   },
+  {
+    id: "A-1-B-3",
+    source: "A-1",
+    target: "B-3",
+    data: {
+      startLabel: "eth0",
+      endLabel: "e0/0",
+      centerLabel: ".7",
+    },
+    type: "start-end",
+  },
 
   //   Pink Container 2
+  // {
+  //   id: "A_1-E",
+  //   source: "A_1-1",
+  //   target: "B_1",
+  //   data: {
+  //     startLabel: "eth0",
+  //     endLabel: "e0/1",
+  //     centerLabel: ".9",
+  //   },
+  //   type: "start-end",
+  // },
+  // {
+  //   id: "A_2-E",
+  //   source: "A_1-2",
+  //   target: "B_1",
+  //   data: {
+  //     startLabel: "eth0",
+  //     endLabel: "e0/0",
+  //     centerLabel: ".8",
+  //   },
+  //   type: "start-end",
+  // },
   {
-    id: "A_1-E",
+    id: "A_1-1-B_1-2",
     source: "A_1-1",
-    target: "B_1",
+    target: "B_1-3",
     data: {
       startLabel: "eth0",
       endLabel: "e0/1",
@@ -42,9 +80,9 @@ export default [
     type: "start-end",
   },
   {
-    id: "A_2-E",
+    id: "A_1-2-B_1-3",
     source: "A_1-2",
-    target: "B_1",
+    target: "B_1-2",
     data: {
       startLabel: "eth0",
       endLabel: "e0/0",
@@ -52,7 +90,6 @@ export default [
     },
     type: "start-end",
   },
-
   //   vEdge-1 to Host-1
   {
     id: "C_1-1-1-C_1-2",
@@ -141,9 +178,19 @@ export default [
   },
 
   // SW to vBond-1
+  // {
+  //   id: "D-3-D-2-1",
+  //   source: "D-3",
+  //   target: "D-2-1",
+  //   data: {
+  //     startLabel: "e0/3",
+  //     endLabel: "ge0/0",
+  //   },
+  //   type: "start-end2",
+  // },
   {
-    id: "D-3-D-2-1",
-    source: "D-3",
+    id: "D-3-1-D-2-1",
+    source: "D-3-1",
     target: "D-2-1",
     data: {
       startLabel: "e0/3",
@@ -153,9 +200,19 @@ export default [
   },
 
   // SW to vBond-2
+  // {
+  //   id: "D-3-D-2-2",
+  //   source: "D-3",
+  //   target: "D-2-2",
+  //   data: {
+  //     startLabel: "e1/0",
+  //     endLabel: "ge0/0",
+  //   },
+  //   type: "start-end2",
+  // },
   {
-    id: "D-3-D-2-2",
-    source: "D-3",
+    id: "D-3-2-D-2-2",
+    source: "D-3-2",
     target: "D-2-2",
     data: {
       startLabel: "e1/0",
@@ -165,7 +222,18 @@ export default [
   },
 
   // SW to CA
-  { id: "D-3-E", source: "D-3", target: "E" },
+  {
+    id: "D-3-6-E",
+    source: "D-3-6",
+    target: "E",
+    data: {
+      startLabel: "e1/3",
+      endLabel: "e0",
+      centerLabel: ".3",
+      centerLabel1: ".31",
+    },
+    type: "start-end6",
+  },
 
   // SW to Internet / MPLS Cloud
   {
@@ -195,9 +263,9 @@ export default [
 
   // SW to vManage 1
   {
-    id: "D-3-D-1-1",
-    source: "D-3",
-    target: "D-1-1",
+    id: "D-3-3-D-1-1-1",
+    source: "D-3-3",
+    target: "D-1-1-1",
     data: {
       startLabel: "e0/0",
       endLabel: "eth0",
@@ -207,9 +275,9 @@ export default [
 
   // SW to vManage 2
   {
-    id: "D-3-D-1-2",
-    source: "D-3",
-    target: "D-1-2",
+    id: "D-3-5-D-1-2-1",
+    source: "D-3-5",
+    target: "D-1-2-1",
     data: {
       startLabel: "e0/1",
       endLabel: "eth0",
@@ -219,9 +287,9 @@ export default [
 
   // SW to vManage 3
   {
-    id: "D-3-D-1-3",
-    source: "D-3",
-    target: "D-1-3",
+    id: "D-3-4-D-1-3-1",
+    source: "D-3-4",
+    target: "D-1-3-1",
     data: {
       startLabel: "e0/2",
       endLabel: "eth0",
@@ -231,9 +299,9 @@ export default [
 
   // vManage 0 to vManage 1
   {
-    id: "D-1-0-D-1-1",
-    source: "D-1-0",
-    target: "D-1-1",
+    id: "D-1-0-1-D-1-1-2",
+    source: "D-1-0-1",
+    target: "D-1-1-2",
     data: {
       startLabel: "e0/0",
       endLabel: "eth1",
@@ -255,9 +323,9 @@ export default [
 
   // vManage 0 to vManage 3
   {
-    id: "D-1-0-D-1-3",
-    source: "D-1-0",
-    target: "D-1-3",
+    id: "D-1-0-2-D-1-3-2",
+    source: "D-1-0-2",
+    target: "D-1-3-2",
     data: {
       startLabel: "e0/1",
       endLabel: "eth1",
@@ -266,7 +334,16 @@ export default [
   },
 
   // CA to Physical LAN
-  { id: "E-1-F_1", source: "E-1", target: "F_1" },
+  {
+    id: "E-1-F_1",
+    source: "E-1",
+    target: "F_1",
+    data: {
+      startLabel: "e1",
+      endLabel: ".100",
+    },
+    type: "start-end5",
+  },
 
   // SW to Internet / MPLS Cloud
   {
