@@ -230,7 +230,7 @@ export default [
       startLabel: "e1/3",
       endLabel: "e0",
       centerLabel: ".3",
-      centerLabel1: ".31",
+      centerLabel1: ".100",
     },
     type: "start-end6",
   },

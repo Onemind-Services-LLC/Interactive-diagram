@@ -23,6 +23,8 @@ const CustomEdge = ({
   const startLabelY = labelY - (labelY - sourceY) * 0.55;
   const endLabelX = labelX - (labelX - targetX) * 0.6;
   const endLabelY = labelY - (labelY - targetY) * 0.6;
+  const endLabelX1 = labelX - (labelX - targetX) * 0.85;
+  const endLabelY1 = labelY - (labelY - targetY) * 0.85;
 
   return (
     <>
@@ -88,8 +90,8 @@ const CustomEdge = ({
           <div
             style={{
               position: "absolute",
-              transform: `translate(-50%, -50%) translate(${endLabelX}px, ${
-                endLabelY - 20
+              transform: `translate(-50%, -50%) translate(${endLabelX1}px, ${
+                endLabelY1 - 10
               }px)`,
               padding: "1px 4px",
               fontSize: 10,
